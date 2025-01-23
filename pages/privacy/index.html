@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeuu Network</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            /* justify-content: center; */
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .language-switcher {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-switcher button {
+            background: none;
+            border: none;
+            color: #007BFF;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .language-switcher button:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-to-home button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .back-to-home button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: none;">
+        <h1 id="header-title">CodeCraft Solutions</h1>
+    </header>
+    <nav>
+        <a href="/" id="nav-home">首页</a>
+        <!-- <a href="/pages/privacy">隐私政策</a>
+        <a href="/pages/terms">服务条款</a> -->
+    </nav>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('zh')">中文</button>
+        <button onclick="switchLanguage('en')">English</button>
+    </div>
+    <div class="container">
+        <h1 id="privacy-title">隐私政策</h1>
+        <section>
+            <h2 id="section1-title">1. 引言</h2>
+            <p id="section1-content">
+                欢迎访问 Zeeuu Network（以下简称“我们”）。我们非常重视您的隐私，并致力于保护您的个人信息。本隐私政策解释了我们在您使用我们的网站、移动应用和其他服务（以下简称“服务”）时如何收集、使用、存储和共享您的个人信息，以及您如何行使您的隐私权利。
+            </p>
+        </section>
+        <section>
+            <h2 id="section2-title">2. 我们收集的信息</h2>
+            <p id="section2-content">
+                我们可能会收集以下类型的个人信息：
+            </p>
+            <ul id="section2-list">
+                <li><strong>身份信息：</strong>如姓名、电子邮件地址、电话号码、用户名等。</li>
+                <li><strong>设备信息：</strong>如 IP 地址、设备型号、操作系统、浏览器类型等。</li>
+                <li><strong>使用数据：</strong>如访问时间、页面浏览记录、点击行为等。</li>
+                <li><strong>位置信息：</strong>如 GPS 数据或 IP 地址推断的地理位置。</li>
+                <li><strong>支付信息：</strong>如信用卡号、账单地址等（仅在使用支付功能时收集）。</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="section3-title">3. 信息的使用</h2>
+            <p id="section3-content">
+                我们收集的信息可能用于以下目的：
+            </p>
+            <ul id="section3-list">
+                <li>提供、维护和改进我们的服务。</li>
+                <li>处理您的请求、订单或交易。</li>
+                <li>与您沟通，例如发送服务通知、更新或营销信息。</li>
+                <li>分析用户行为以优化用户体验。</li>
+                <li>检测和防止欺诈、滥用或其他非法活动。</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="section4-title">4. 信息的共享</h2>
+            <p id="section4-content">
+                我们不会将您的个人信息出售或出租给第三方。但在以下情况下，我们可能会共享您的信息：
+            </p>
+            <ul id="section4-list">
+                <li><strong>获得您的同意：</strong>在您明确同意的情况下，我们可能会与第三方共享您的信息。</li>
+                <li><strong>服务提供商：</strong>我们可能会与第三方服务提供商共享信息，以帮助我们提供服务（如支付处理、数据分析等）。</li>
+                <li><strong>法律要求：</strong>为遵守法律、法规或响应政府机构的合法请求。</li>
+                <li><strong>业务转让：</strong>在公司合并、收购或资产出售的情况下，您的信息可能会作为交易的一部分被转移。</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="section5-title">5. 数据安全</h2>
+            <p id="section5-content">
+                我们采取合理的技术和组织措施来保护您的个人信息，防止未经授权的访问、使用或泄露。这些措施包括：
+            </p>
+            <ul id="section5-list">
+                <li>使用加密技术保护数据传输和存储。</li>
+                <li>定期进行安全审计和漏洞扫描。</li>
+                <li>限制员工和第三方服务提供商对信息的访问权限。</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="section6-title">6. 您的权利</h2>
+            <p id="section6-content">
+                根据适用法律，您可能拥有以下权利：
+            </p>
+            <ul id="section6-list">
+                <li><strong>访问权：</strong>您可以请求访问我们持有的关于您的个人信息。</li>
+                <li><strong>更正权：</strong>您可以请求更正不准确或不完整的个人信息。</li>
+                <li><strong>删除权：</strong>您可以请求删除您的个人信息。</li>
+                <li><strong>限制处理权：</strong>您可以请求限制我们处理您的个人信息。</li>
+                <li><strong>数据可携权：</strong>您可以请求以结构化、通用的格式获取您的个人信息。</li>
+                <li><strong>反对权：</strong>您可以反对我们基于合法利益处理您的个人信息。</li>
+            </ul>
+            <p id="section6-additional">
+                如需行使上述权利，请通过以下联系方式与我们联系。我们将在合理时间内响应您的请求。
+            </p>
+        </section>
+        <section>
+            <h2 id="section7-title">7. 数据保留</h2>
+            <p id="section7-content">
+                我们仅在实现本隐私政策所述目的所需的时间内保留您的个人信息，除非法律要求或允许更长的保留期限。
+            </p>
+        </section>
+        <section>
+            <h2 id="section8-title">8. 国际数据传输</h2>
+            <p id="section8-content">
+                您的个人信息可能会被传输到您所在国家以外的地区进行处理和存储。我们将采取适当措施确保您的信息在这些地区得到充分保护。
+            </p>
+        </section>
+        <section>
+            <h2 id="section9-title">9. 儿童隐私</h2>
+            <p id="section9-content">
+                我们的服务不面向 13 岁以下的儿童。如果我们发现无意中收集了儿童的个人信息，将立即采取措施删除这些信息。
+            </p>
+        </section>
+        <section>
+            <h2 id="section10-title">10. 隐私政策的变更</h2>
+            <p id="section10-content">
+                我们可能会不时更新本隐私政策。如有重大变更，我们将通过电子邮件或网站公告通知您。建议您定期查看本政策以了解最新内容。
+            </p>
+        </section>
+        <section>
+            <h2 id="section11-title">11. 联系我们</h2>
+            <p id="section11-content">
+                如果您对本隐私政策有任何疑问或需要行使您的隐私权利，请通过以下方式联系我们：
+                <br>
+                邮箱：privacy@codecraftsolutions.com
+                <br>
+                电话：+123 456 7890
+                <br>
+                地址：123 科技大道，创新城，国家
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // 语言数据
+        const languageData = {
+            zh: {
+                headerTitle: "智域网络",
+                navHome: "首页",
+                privacyTitle: "隐私政策",
+                section1Title: "1. 引言",
+                section1Content: "欢迎访问 智域网络（以下简称“我们”）。我们非常重视您的隐私，并致力于保护您的个人信息。本隐私政策解释了我们在您使用我们的网站、移动应用和其他服务（以下简称“服务”）时如何收集、使用、存储和共享您的个人信息，以及您如何行使您的隐私权利。",
+                section2Title: "2. 我们收集的信息",
+                section2Content: "我们可能会收集以下类型的个人信息：",
+                section2List: [
+                    "<strong>身份信息：</strong>如姓名、电子邮件地址、电话号码、用户名等。",
+                    "<strong>设备信息：</strong>如 IP 地址、设备型号、操作系统、浏览器类型等。",
+                    "<strong>使用数据：</strong>如访问时间、页面浏览记录、点击行为等。",
+                    "<strong>位置信息：</strong>如 GPS 数据或 IP 地址推断的地理位置。",
+                    "<strong>支付信息：</strong>如信用卡号、账单地址等（仅在使用支付功能时收集）。"
+                ],
+                section3Title: "3. 信息的使用",
+                section3Content: "我们收集的信息可能用于以下目的：",
+                section3List: [
+                    "提供、维护和改进我们的服务。",
+                    "处理您的请求、订单或交易。",
+                    "与您沟通，例如发送服务通知、更新或营销信息。",
+                    "分析用户行为以优化用户体验。",
+                    "检测和防止欺诈、滥用或其他非法活动。"
+                ],
+                section4Title: "4. 信息的共享",
+                section4Content: "我们不会将您的个人信息出售或出租给第三方。但在以下情况下，我们可能会共享您的信息：",
+                section4List: [
+                    "<strong>获得您的同意：</strong>在您明确同意的情况下，我们可能会与第三方共享您的信息。",
+                    "<strong>服务提供商：</strong>我们可能会与第三方服务提供商共享信息，以帮助我们提供服务（如支付处理、数据分析等）。",
+                    "<strong>法律要求：</strong>为遵守法律、法规或响应政府机构的合法请求。",
+                    "<strong>业务转让：</strong>在公司合并、收购或资产出售的情况下，您的信息可能会作为交易的一部分被转移。"
+                ],
+                section5Title: "5. 数据安全",
+                section5Content: "我们采取合理的技术和组织措施来保护您的个人信息，防止未经授权的访问、使用或泄露。这些措施包括：",
+                section5List: [
+                    "使用加密技术保护数据传输和存储。",
+                    "定期进行安全审计和漏洞扫描。",
+                    "限制员工和第三方服务提供商对信息的访问权限。"
+                ],
+                section6Title: "6. 您的权利",
+                section6Content: "根据适用法律，您可能拥有以下权利：",
+                section6List: [
+                    "<strong>访问权：</strong>您可以请求访问我们持有的关于您的个人信息。",
+                    "<strong>更正权：</strong>您可以请求更正不准确或不完整的个人信息。",
+                    "<strong>删除权：</strong>您可以请求删除您的个人信息。",
+                    "<strong>限制处理权：</strong>您可以请求限制我们处理您的个人信息。",
+                    "<strong>数据可携权：</strong>您可以请求以结构化、通用的格式获取您的个人信息。",
+                    "<strong>反对权：</strong>您可以反对我们基于合法利益处理您的个人信息。"
+                ],
+                section6Additional: "如需行使上述权利，请通过以下联系方式与我们联系。我们将在合理时间内响应您的请求。",
+                section7Title: "7. 数据保留",
+                section7Content: "我们仅在实现本隐私政策所述目的所需的时间内保留您的个人信息，除非法律要求或允许更长的保留期限。",
+                section8Title: "8. 国际数据传输",
+                section8Content: "您的个人信息可能会被传输到您所在国家以外的地区进行处理和存储。我们将采取适当措施确保您的信息在这些地区得到充分保护。",
+                section9Title: "9. 儿童隐私",
+                section9Content: "我们的服务不面向 13 岁以下的儿童。如果我们发现无意中收集了儿童的个人信息，将立即采取措施删除这些信息。",
+                section10Title: "10. 隐私政策的变更",
+                section10Content: "我们可能会不时更新本隐私政策。如有重大变更，我们将通过电子邮件或网站公告通知您。建议您定期查看本政策以了解最新内容。",
+                section11Title: "11. 联系我们",
+                section11Content: "如果您对本隐私政策有任何疑问或需要行使您的隐私权利，请通过以下方式联系我们：<br>邮箱：info@zeeuu.com<br>电话：+8618638333833<br>地址: 广州市天河区菁晖街12号204铺226-39N"
+            },
+            en: {
+                headerTitle: "Zeeuu Network",
+                navHome: "Home",
+                privacyTitle: "Privacy Policy",
+                section1Title: "1. Introduction",
+                section1Content: "Welcome to Zeeuu Network (hereinafter referred to as 'we'). We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and share your personal information when you use our website, mobile applications, and other services (hereinafter referred to as 'services'), as well as how you can exercise your privacy rights.",
+                section2Title: "2. Information We Collect",
+                section2Content: "We may collect the following types of personal information:",
+                section2List: [
+                    "<strong>Identity Information:</strong> Such as name, email address, phone number, username, etc.",
+                    "<strong>Device Information:</strong> Such as IP address, device model, operating system, browser type, etc.",
+                    "<strong>Usage Data:</strong> Such as access time, page views, click behavior, etc.",
+                    "<strong>Location Information:</strong> Such as GPS data or IP-based location.",
+                    "<strong>Payment Information:</strong> Such as credit card number, billing address, etc. (collected only when using payment features)."
+                ],
+                section3Title: "3. Use of Information",
+                section3Content: "The information we collect may be used for the following purposes:",
+                section3List: [
+                    "To provide, maintain, and improve our services.",
+                    "To process your requests, orders, or transactions.",
+                    "To communicate with you, such as sending service notifications, updates, or marketing information.",
+                    "To analyze user behavior to optimize user experience.",
+                    "To detect and prevent fraud, abuse, or other illegal activities."
+                ],
+                section4Title: "4. Sharing of Information",
+                section4Content: "We do not sell or rent your personal information to third parties. However, we may share your information under the following circumstances:",
+                section4List: [
+                    "<strong>With Your Consent:</strong> We may share your information with third parties if you have given explicit consent.",
+                    "<strong>Service Providers:</strong> We may share information with third-party service providers to help us deliver our services (e.g., payment processing, data analysis, etc.).",
+                    "<strong>Legal Requirements:</strong> To comply with laws, regulations, or legitimate requests from government agencies.",
+                    "<strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction."
+                ],
+                section5Title: "5. Data Security",
+                section5Content: "We take reasonable technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure. These measures include:",
+                section5List: [
+                    "Using encryption to protect data during transmission and storage.",
+                    "Conducting regular security audits and vulnerability scans.",
+                    "Restricting access to information by employees and third-party service providers."
+                ],
+                section6Title: "6. Your Rights",
+                section6Content: "Under applicable laws, you may have the following rights:",
+                section6List: [
+                    "<strong>Right to Access:</strong> You can request access to the personal information we hold about you.",
+                    "<strong>Right to Rectification:</strong> You can request correction of inaccurate or incomplete personal information.",
+                    "<strong>Right to Erasure:</strong> You can request deletion of your personal information.",
+                    "<strong>Right to Restrict Processing:</strong> You can request restriction of our processing of your personal information.",
+                    "<strong>Right to Data Portability:</strong> You can request to receive your personal information in a structured, commonly used format.",
+                    "<strong>Right to Object:</strong> You can object to our processing of your personal information based on legitimate interests."
+                ],
+                section6Additional: "To exercise these rights, please contact us using the information below. We will respond to your request within a reasonable time.",
+                section7Title: "7. Data Retention",
+                section7Content: "We retain your personal information only for as long as necessary to achieve the purposes described in this Privacy Policy, unless a longer retention period is required or permitted by law.",
+                section8Title: "8. International Data Transfers",
+                section8Content: "Your personal information may be transferred to and processed in regions outside your country. We will take appropriate measures to ensure your information is adequately protected in these regions.",
+                section9Title: "9. Children's Privacy",
+                section9Content: "Our services are not directed to children under the age of 13. If we discover that we have inadvertently collected personal information from a child, we will take immediate steps to delete such information.",
+                section10Title: "10. Changes to This Privacy Policy",
+                section10Content: "We may update this Privacy Policy from time to time. In case of significant changes, we will notify you via email or a notice on our website. We recommend that you review this policy periodically to stay informed.",
+                section11Title: "11. Contact Us",
+                section11Content: "If you have any questions about this Privacy Policy or need to exercise your privacy rights, please contact us at:<br>Email: info@zeeuu.com<br>Phone: +8618638333833<br>Address: 12 Jinghui Street, Tianhe District, Guangzhou, China"
+            }
+        };
+
+        // 检测浏览器语言并设置默认语言
+        function detectBrowserLanguage() {
+            const browserLanguage = navigator.language || navigator.languages[0];
+            if (browserLanguage.startsWith('zh')) {
+                return 'zh'; // 中文
+            } else {
+                return 'en'; // 默认英文
+            }
+        }
+
+        // 默认语言
+        let currentLanguage = detectBrowserLanguage();
+
+        // 切换语言函数
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            updateContent();
+        }
+
+        // 更新页面内容
+        function updateContent() {
+            const data = languageData[currentLanguage];
+            document.getElementById('header-title').textContent = data.headerTitle;
+            document.getElementById('nav-home').textContent = data.navHome;
+            document.getElementById('privacy-title').textContent = data.privacyTitle;
+            document.getElementById('section1-title').textContent = data.section1Title;
+            document.getElementById('section1-content').innerHTML = data.section1Content;
+            document.getElementById('section2-title').textContent = data.section2Title;
+            document.getElementById('section2-content').innerHTML = data.section2Content;
+            document.getElementById('section2-list').innerHTML = data.section2List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section3-title').textContent = data.section3Title;
+            document.getElementById('section3-content').innerHTML = data.section3Content;
+            document.getElementById('section3-list').innerHTML = data.section3List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section4-title').textContent = data.section4Title;
+            document.getElementById('section4-content').innerHTML = data.section4Content;
+            document.getElementById('section4-list').innerHTML = data.section4List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section5-title').textContent = data.section5Title;
+            document.getElementById('section5-content').innerHTML = data.section5Content;
+            document.getElementById('section5-list').innerHTML = data.section5List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section6-title').textContent = data.section6Title;
+            document.getElementById('section6-content').innerHTML = data.section6Content;
+            document.getElementById('section6-list').innerHTML = data.section6List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section6-additional').innerHTML = data.section6Additional;
+            document.getElementById('section7-title').textContent = data.section7Title;
+            document.getElementById('section7-content').innerHTML = data.section7Content;
+            document.getElementById('section8-title').textContent = data.section8Title;
+            document.getElementById('section8-content').innerHTML = data.section8Content;
+            document.getElementById('section9-title').textContent = data.section9Title;
+            document.getElementById('section9-content').innerHTML = data.section9Content;
+            document.getElementById('section10-title').textContent = data.section10Title;
+            document.getElementById('section10-content').innerHTML = data.section10Content;
+            document.getElementById('section11-title').textContent = data.section11Title;
+            document.getElementById('section11-content').innerHTML = data.section11Content;
+        }
+
+        // 初始化页面
+        updateContent();
+    </script>
+</body>
+</html>

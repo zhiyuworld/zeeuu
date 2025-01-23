@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务条款 - Zeeuu Network</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            /* justify-content: center; */
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .language-switcher {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-switcher button {
+            background: none;
+            border: none;
+            color: #007BFF;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .language-switcher button:hover {
+            text-decoration: underline;
+        }
+        .back-to-home {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-to-home button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .back-to-home button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: none;">
+        <h1 id="header-title">CodeCraft Solutions</h1>
+    </header>
+    <nav>
+        <a href="/" id="nav-home">首页</a>
+        <!-- <a href="/pages/privacy">隐私政策</a>
+        <a href="/pages/terms">服务条款</a> -->
+    </nav>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('zh')">中文</button>
+        <button onclick="switchLanguage('en')">English</button>
+    </div>
+    <div class="container">
+        <h1 id="terms-title">服务条款</h1>
+        <section>
+            <h2 id="section1-title">1. 引言</h2>
+            <p id="section1-content">
+                欢迎使用 Zeeuu Network 提供的服务。在注册或使用我们的服务之前，请仔细阅读本服务条款。通过访问或使用我们的服务，您同意遵守本条款的所有规定。
+            </p>
+        </section>
+        <section>
+            <h2 id="section2-title">2. 服务内容</h2>
+            <p id="section2-content">
+                我们提供的服务包括但不限于：
+            </p>
+            <ul id="section2-list">
+                <li>软件开发与定制服务。</li>
+                <li>技术咨询与支持。</li>
+                <li>云解决方案与数据存储服务。</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="section3-title">3. 用户义务</h2>
+            <p id="section3-content">
+                在使用我们的服务时，您同意：
+            </p>
+            <ul id="section3-list">
+                <li>遵守所有适用的法律法规。</li>
+                <li>不从事任何可能损害我们服务的行为。</li>
+                <li>不尝试未经授权访问我们的系统或数据。</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="section4-title">4. 知识产权</h2>
+            <p id="section4-content">
+                我们保留对服务内容的所有知识产权。未经我们明确许可，您不得复制、修改或分发我们的内容。
+            </p>
+        </section>
+        <section>
+            <h2 id="section5-title">5. 免责声明</h2>
+            <p id="section5-content">
+                我们的服务按“原样”提供，不提供任何形式的明示或暗示的保证。我们不对因使用或无法使用服务而产生的任何损失负责。
+            </p>
+        </section>
+        <section>
+            <h2 id="section6-title">6. 服务变更与终止</h2>
+            <p id="section6-content">
+                我们保留随时修改、暂停或终止服务的权利，恕不另行通知。
+            </p>
+        </section>
+        <section>
+            <h2 id="section7-title">7. 适用法律</h2>
+            <p id="section7-content">
+                本服务条款受中华人民共和国法律管辖。任何争议应通过友好协商解决，协商不成的，提交有管辖权的人民法院诉讼解决。
+            </p>
+        </section>
+        <section>
+            <h2 id="section8-title">8. 联系我们</h2>
+            <p id="section8-content">
+                如果您对本服务条款有任何疑问，请通过以下方式联系我们：
+                <br>
+                邮箱：info@zeeuu.com
+                <br>
+                电话：+8618638333833
+                <br>
+                地址：123 科技大道，创新城，国家
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // 语言数据
+        const languageData = {
+            zh: {
+                headerTitle: "智域网络",
+                navHome: "首页",
+                termsTitle: "服务条款",
+                section1Title: "1. 引言",
+                section1Content: "欢迎使用 智域网络 提供的服务。在注册或使用我们的服务之前，请仔细阅读本服务条款。通过访问或使用我们的服务，您同意遵守本条款的所有规定。",
+                section2Title: "2. 服务内容",
+                section2Content: "我们提供的服务包括但不限于：",
+                section2List: [
+                    "软件开发与定制服务。",
+                    "技术咨询与支持。",
+                    "云解决方案与数据存储服务。"
+                ],
+                section3Title: "3. 用户义务",
+                section3Content: "在使用我们的服务时，您同意：",
+                section3List: [
+                    "遵守所有适用的法律法规。",
+                    "不从事任何可能损害我们服务的行为。",
+                    "不尝试未经授权访问我们的系统或数据。"
+                ],
+                section4Title: "4. 知识产权",
+                section4Content: "我们保留对服务内容的所有知识产权。未经我们明确许可，您不得复制、修改或分发我们的内容。",
+                section5Title: "5. 免责声明",
+                section5Content: "我们的服务按“原样”提供，不提供任何形式的明示或暗示的保证。我们不对因使用或无法使用服务而产生的任何损失负责。",
+                section6Title: "6. 服务变更与终止",
+                section6Content: "我们保留随时修改、暂停或终止服务的权利，恕不另行通知。",
+                section7Title: "7. 适用法律",
+                section7Content: "本服务条款受中华人民共和国法律管辖。任何争议应通过友好协商解决，协商不成的，提交有管辖权的人民法院诉讼解决。",
+                section8Title: "8. 联系我们",
+                section8Content: "如果您对本服务条款有任何疑问，请通过以下方式联系我们：<br>邮箱：info@zeeuu.com<br>电话：+8618638333833<br>地址：广州市天河区菁晖街12号204铺226-39N"
+            },
+            en: {
+                headerTitle: "Zeeuu Network",
+                navHome: "Home",
+                termsTitle: "Terms of Service",
+                section1Title: "1. Introduction",
+                section1Content: "Welcome to the services provided by Zeeuu Network. Before registering or using our services, please read these Terms of Service carefully. By accessing or using our services, you agree to comply with all provisions of these terms.",
+                section2Title: "2. Service Content",
+                section2Content: "Our services include but are not limited to:",
+                section2List: [
+                    "Software development and customization services.",
+                    "Technical consulting and support.",
+                    "Cloud solutions and data storage services."
+                ],
+                section3Title: "3. User Obligations",
+                section3Content: "When using our services, you agree to:",
+                section3List: [
+                    "Comply with all applicable laws and regulations.",
+                    "Not engage in any activities that may harm our services.",
+                    "Not attempt to access our systems or data without authorization."
+                ],
+                section4Title: "4. Intellectual Property",
+                section4Content: "We retain all intellectual property rights to the content of our services. You may not copy, modify, or distribute our content without our explicit permission.",
+                section5Title: "5. Disclaimer",
+                section5Content: "Our services are provided 'as is' without any express or implied warranties. We are not responsible for any losses arising from the use or inability to use our services.",
+                section6Title: "6. Service Changes and Termination",
+                section6Content: "We reserve the right to modify, suspend, or terminate our services at any time without prior notice.",
+                section7Title: "7. Governing Law",
+                section7Content: "These Terms of Service are governed by the laws of the People's Republic of China. Any disputes shall be resolved through friendly negotiation. If negotiation fails, the dispute shall be submitted to the competent people's court for litigation.",
+                section8Title: "8. Contact Us",
+                section8Content: "If you have any questions about these Terms of Service, please contact us at:<br>Email: info@zeeuu.com<br>Phone: +8618638333833<br>Address: 12 Jinghui Street, Tianhe District, Guangzhou, China"
+            }
+        };
+
+        // 检测浏览器语言并设置默认语言
+        function detectBrowserLanguage() {
+            const browserLanguage = navigator.language || navigator.languages[0];
+            if (browserLanguage.startsWith('zh')) {
+                return 'zh'; // 中文
+            } else {
+                return 'en'; // 默认英文
+            }
+        }
+
+        // 默认语言
+        let currentLanguage = detectBrowserLanguage();
+
+        // 切换语言函数
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            updateContent();
+        }
+
+        // 更新页面内容
+        function updateContent() {
+            const data = languageData[currentLanguage];
+            document.getElementById('header-title').textContent = data.headerTitle;
+            document.getElementById('nav-home').textContent = data.navHome;
+            document.getElementById('terms-title').textContent = data.termsTitle;
+            document.getElementById('section1-title').textContent = data.section1Title;
+            document.getElementById('section1-content').innerHTML = data.section1Content;
+            document.getElementById('section2-title').textContent = data.section2Title;
+            document.getElementById('section2-content').innerHTML = data.section2Content;
+            document.getElementById('section2-list').innerHTML = data.section2List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section3-title').textContent = data.section3Title;
+            document.getElementById('section3-content').innerHTML = data.section3Content;
+            document.getElementById('section3-list').innerHTML = data.section3List.map(item => `<li>${item}</li>`).join('');
+            document.getElementById('section4-title').textContent = data.section4Title;
+            document.getElementById('section4-content').innerHTML = data.section4Content;
+            document.getElementById('section5-title').textContent = data.section5Title;
+            document.getElementById('section5-content').innerHTML = data.section5Content;
+            document.getElementById('section6-title').textContent = data.section6Title;
+            document.getElementById('section6-content').innerHTML = data.section6Content;
+            document.getElementById('section7-title').textContent = data.section7Title;
+            document.getElementById('section7-content').innerHTML = data.section7Content;
+            document.getElementById('section8-title').textContent = data.section8Title;
+            document.getElementById('section8-content').innerHTML = data.section8Content;
+        }
+
+        // 初始化页面
+        updateContent();
+    </script>
+</body>
+</html>

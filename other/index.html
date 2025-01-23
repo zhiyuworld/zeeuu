@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft Solutions - 软件开发公司</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Contact Us 表单样式 */
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form input[type="tel"]:focus,
+        .contact-form textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-form button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+            }
+            .contact-form h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="section" id="contact">
+            <div class="contact-form">
+                <h2 id="contact-title">联系我们</h2>
+                <form>
+                    <label for="name" id="contact-label-name">姓名：</label>
+                    <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+
+                    <label for="email" id="contact-label-email">邮箱：</label>
+                    <input type="email" id="email" name="email" required placeholder="请输入您的邮箱">
+
+                    <label for="phone" id="contact-label-phone">电话：</label>
+                    <input type="tel" id="phone" name="phone" placeholder="请输入您的电话">
+
+                    <label for="message" id="contact-label-message">留言：</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="请输入您的留言"></textarea>
+
+                    <button type="submit" id="contact-btn-submit">提交</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // 语言数据
+        const languageData = {
+            zh: {
+                contactTitle: "联系我们",
+                contactLabelName: "姓名：",
+                contactLabelEmail: "邮箱：",
+                contactLabelPhone: "电话：",
+                contactLabelMessage: "留言：",
+                contactBtnSubmit: "提交"
+            },
+            en: {
+                contactTitle: "Contact Us",
+                contactLabelName: "Name:",
+                contactLabelEmail: "Email:",
+                contactLabelPhone: "Phone:",
+                contactLabelMessage: "Message:",
+                contactBtnSubmit: "Submit"
+            }
+        };
+
+        // 默认语言
+        let currentLanguage = 'zh';
+
+        // 切换语言函数
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            updateContent();
+        }
+
+        // 更新表单内容
+        function updateContent() {
+            const data = languageData[currentLanguage];
+            document.getElementById('contact-title').textContent = data.contactTitle;
+            document.getElementById('contact-label-name').textContent = data.contactLabelName;
+            document.getElementById('contact-label-email').textContent = data.contactLabelEmail;
+            document.getElementById('contact-label-phone').textContent = data.contactLabelPhone;
+            document.getElementById('contact-label-message').textContent = data.contactLabelMessage;
+            document.getElementById('contact-btn-submit').textContent = data.contactBtnSubmit;
+        }
+
+        // 初始化页面
+        updateContent();
+    </script>
+</body>
+</html>

@@ -82,22 +82,8 @@
         </section>
         <section class="section" id="contact">
             <h2 id="contact-title">联系我们</h2>
-            <p id="contact-address">地址：广州市天河区菁晖街12号204铺226-39N</p>
-            <p id="contact-phone">电话：+8618638336888</p>
             <p id="contact-email">邮箱：info@zeeuu.com</p>
-            <!-- <form>
-                <label for="name" id="contact-label-name">姓名：</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email" id="contact-label-email">邮箱：</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone" id="contact-label-phone">电话：</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="message" id="contact-label-message">留言：</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit" class="btn" id="contact-btn-submit">提交</button>                
-            </form> -->
             <div class="contact-form">
-                <!-- <h2 id="contact-title">联系我们</h2> -->
                 <form>
                     <label for="name" id="contact-label-name">姓名：</label>
                     <input type="text" id="name" name="name" required placeholder="">
@@ -174,8 +160,6 @@
                 ],
                 blogBtn: "阅读更多新闻",
                 contactTitle: "联系我们",
-                contactAddress: "地址：广州市天河区菁晖街12号204铺226-39N",
-                contactPhone: "电话：+18638333833",
                 contactEmail: "邮箱：info@zeeuu.com",
                 contactLabelName: "姓名：",
                 contactLabelEmail: "邮箱：",
@@ -235,8 +219,6 @@
                 ],
                 blogBtn: "Read More News",
                 contactTitle: "Contact Us",
-                contactAddress: "Address: 12 Jinghui Street, Tianhe District, Guangzhou, China",
-                contactPhone: "Phone: +18638333833",
                 contactEmail: "Email: info@zeeuu.com",
                 contactLabelName: "Name:",
                 contactLabelEmail: "Email:",
@@ -281,8 +263,6 @@
             document.getElementById('blog-list').innerHTML = data.blogList.map(item => `<li>${item}</li>`).join('');
             document.getElementById('blog-btn').textContent = data.blogBtn;
             document.getElementById('contact-title').textContent = data.contactTitle;
-            document.getElementById('contact-address').textContent = data.contactAddress;
-            document.getElementById('contact-phone').textContent = data.contactPhone;
             document.getElementById('contact-email').textContent = data.contactEmail;
             document.getElementById('contact-label-name').textContent = data.contactLabelName;
             document.getElementById('contact-label-email').textContent = data.contactLabelEmail;

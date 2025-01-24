@@ -192,6 +192,7 @@ footer a{
 .contact-form button[type="submit"] {
     /* display: block; */
     /* width: 100%; */
+    min-width: 150px;
     padding: 12px;
     background: #007BFF;
     color: #fff;
